@@ -25,8 +25,11 @@ Each target is an unmodified snapshot of its subsystem at the listed commit. To 
 | `smc` | [`net/smc`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/net/smc) | 17,807 | [`4d7d9486`](https://github.com/torvalds/linux/commit/4d7d9486c04d917265f64c55bd23b2cc4fe7749c) | RFC 7609 | 2 |
 | `sctp2` | [`net/sctp`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/net/sctp) | 43,963 | [`4d7d9486`](https://github.com/torvalds/linux/commit/4d7d9486c04d917265f64c55bd23b2cc4fe7749c) | RFC 9260, 4960, 6458, 8260, 4895, 5061, 3758 | 3 |
 | `nvme-host-docs` | [`drivers/nvme/host`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/drivers/nvme/host) | 29,338 | [`4d7d9486`](https://github.com/torvalds/linux/commit/4d7d9486c04d917265f64c55bd23b2cc4fe7749c) | NVMe Base 2.4, NVM Command Set 1.3, PCIe/RDMA/TCP transports | 4 |
+| `nvme-target` | [`drivers/nvme/target`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/drivers/nvme/target) | 26,149 | [`4d7d9486`](https://github.com/torvalds/linux/commit/4d7d9486c04d917265f64c55bd23b2cc4fe7749c) | NVMe Base 2.4, NVM Command Set 1.3, PCIe/RDMA/TCP transports | 2 |
+| `vsock` | [`net/vmw_vsock`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/net/vmw_vsock) | 11,150 | [`4d7d9486`](https://github.com/torvalds/linux/commit/4d7d9486c04d917265f64c55bd23b2cc4fe7749c) | OASIS VIRTIO v1.4 including the socket device section | 2 |
+| `nfsd` | [`fs/nfsd`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/fs/nfsd) + [`net/sunrpc`](https://github.com/torvalds/linux/tree/4d7d9486c04d917265f64c55bd23b2cc4fe7749c/net/sunrpc) | 78,612 | [`4d7d9486`](https://github.com/torvalds/linux/commit/4d7d9486c04d917265f64c55bd23b2cc4fe7749c) | RFC 8881, 7530, 5531, 2203, 8276 | 2 |
 
-Line counts cover `.c` files only. Status is the step number from the list above.
+Line counts cover `.c` files only. Status is the step number from the list above. `nvme-target`, `vsock`, and `nfsd` are queued for step 3; their status will change when the runs finish.
 
 Each target holds the subsystem source plus `reference_docs/cite/`, which contains the specifications. Files directly under `reference_docs/` are background material, such as CVE lists and git history, and are not specifications. Run output goes in `quality/`, which is not committed to `main`.
 
