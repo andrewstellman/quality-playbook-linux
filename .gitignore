@@ -1,0 +1,6 @@
+# Runs write here; results go to a qpb-results-<date> branch, not main
+*/quality/
+# QPB installs itself per-run
+*/.claude/
+# Raw PDFs are redundant with the .txt extractions in cite/
+*/reference_docs/raw_pdf/
